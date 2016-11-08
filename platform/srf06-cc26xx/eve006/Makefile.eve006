@@ -1,0 +1,10 @@
+CFLAGS += -DBOARD_EVE006=1
+
+CONTIKI_TARGET_DIRS += eve006 common
+
+BOARD_SOURCEFILES += board.c eve006-sensor.c leds-arch.c button-sensor.c
+BOARD_SOURCEFILES += i2c01.c G_Sensor.c
+BOARD_SOURCEFILES += mled_sensor.c sensor_si7020.c sensor_adxl345.c switch_sensor.c
+
+### Signal that we can be programmed with cc2538-bsl
+BOARD_SUPPORTS_BSL=1
