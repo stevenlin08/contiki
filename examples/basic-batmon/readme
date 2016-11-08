@@ -1,0 +1,7 @@
+ BATstatus = (BATstatus * 125) >> 5;
+
+//convert in floating point value
+BATvoltage = (float)BATstatus / 1000;
+
+if you add batmon sensor ,do 
+SENSORS(&button_left_sensor, &button_right_sensor,&batmon_sensor);

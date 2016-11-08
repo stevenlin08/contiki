@@ -38,6 +38,7 @@
  */
 
 #include "contiki.h"
+#include "dev/leds.h"
 
 #include <stdio.h> /* For printf() */
 /*---------------------------------------------------------------------------*/
@@ -49,7 +50,7 @@ PROCESS_THREAD(hello_world_process, ev, data)
   PROCESS_BEGIN();
 
   printf("Hello, world\n");
-  
+  leds_on(LEDS_RED);
   PROCESS_END();
 }
 /*---------------------------------------------------------------------------*/

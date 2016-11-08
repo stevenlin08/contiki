@@ -1,0 +1,7 @@
+1.create self sensor driver(use adc sensor,which in cpu.../dev/...)
+add /contiki/platform/srf06-cc26xx/launchpad/adcin-sensor.h/c
+
+add pend (your board,makefile) in this is Makefile.launchpad
+
+### for your another sensor driver
+BOARD_SOURCEFILES += adcin-sensor.c
